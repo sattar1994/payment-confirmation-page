@@ -5,8 +5,166 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment confirmation page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            color: #06663E;
+            font-family: Dana;
+        }
+        @font-face {
+            font-family: Dana;
+            src: url(font/Dana-Pro/Dana-Pro/Dana-FaNum/Dana-FaNum-Light/Dana-FaNum-Light.ttf);
+        }
+        body{
+            background-image: url(image/login\ 2.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .container{
+            /* width: 40%; */
+            /* height: 100vh; */
+            margin-top: 1rem;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box{
+            width: 30%;
+            height: 85vh;
+            padding: 2rem .6rem;
+            box-shadow: 0 0 12px rgb(211, 211, 211);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 4rem 0;
+            background-color: white;
+            
+            
+        }
+        a{
+            color: #72A184;
+            font-weight: bold;
+            font-size: 18px; 
+        }
+        .content{
+           
+            text-align: center;
+            
+        }
+        .title h1{
+           color: #72A184;
+           font-size: 1.8rem;
+           
+        }
+        .content>div{
+            margin-top: .9rem;
+        }
+        .footer{
+            width: 100%;
+            margin-top: 2rem;
+            color: #06663E;
+            font-size: 12px;
+        }
+        .image{
+            width: 4rem;
+        }
+        h2{
+            font-size: 1.4rem;
+            font-weight: 800;
+        }
+        h3{
+            font-size: 15px;
+            display: inline-block;
+        }
+        .cont{
+                direction: rtl;
+                text-align: center;
+                
+            }
+        @media screen and (min-width: 601px) and (max-width: 1024px) {
+           .box{
+            width: 55%;
+           }
+           .cont{
+                direction: rtl;
+                text-align: center;
+                
+            }
+            
+        }
+        @media screen and (max-width: 600px) {
+            .container{
+                width: 94%;
+                height: 100vh;
+               margin: 1rem auto;
+                
+            }
+            .box{
+                width: 100%;
+                height: 90%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                gap: 2rem;
+                font-size: 12px;
+            
+            }
+            .footer{
+                width: 100%;
+                margin-top: .4rem;
+                direction: rtl;
+               font-size: 12px;
+                text-align: center;
+            }
+            .cont{
+                direction: rtl;
+                text-align: center;
+                
+            }
+            
+        }
+        
+
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="box">
+            <div class="title">
+                <h1>تایید پرداخت</h1>
+            </div>
+            <div class="content">
+                <div>
+                    <img src="image/photo_5776205597342022547_m.jpg" class="image" alt="image">
+
+                </div>
+                <div>
+                    <h2>پرداخت شما با موفقیت انجام شد</h2>
+
+                </div>
+                <div class="cont">
+                  
+                    <h3>تالحضاتی دیگربه صورت خودکاربه پلتفرم هدایت می شوید...</h3>
+                </div>
+                <div>
+                    <span><a href="#">ورود به پلتفرم</a></span>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <h4 class="footer">تمامی حقوق مادی و معنوی این سایت متعلق به تتربانک است</h2>
+
+        </div>
+
+
+    </div>
 </body>
 </html>
